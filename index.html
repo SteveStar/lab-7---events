@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="part-one">
+    <div id="container">
         <h3>Mouse Events</h3>
         <div id="mouseHover" onmouseenter="this.style.backgroundColor = 'salmon';" onmouseleave="this.style.backgroundColor = 'transparent';">
             Hover over me (Inline)
@@ -17,7 +17,13 @@
         <div id="hoverDiv">
             Hover over me (Listener)
         </div>
-    </section>
+    </div>
+    
+    <section id="container">
+        <h3>Keyboard Events</h3>
+        <input type="text" id="keyInput" placeholder="Type something here..." />
+        <div class="output" id="keyOutput">Press a key...</div>
 
+    </section>
 </body>
 </html>
