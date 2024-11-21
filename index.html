@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <source src="script.js" type="">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <section id="part-one">
+        <h3>Mouse Events</h3>
+        <div id="mouseHover" onmouseenter="this.style.backgroundColor = 'salmon';" onmouseleave="this.style.backgroundColor = 'transparent';">
+            Hover over me (Inline)
+        </div>
+
+        <div id="hoverDiv">
+            Hover over me (Listener)
+        </div>
+    </section>
+
 </body>
 </html>
