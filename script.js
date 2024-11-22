@@ -34,3 +34,17 @@ form.addEventListener('submit', (event) => {
 });
 
 //fourth part
+const inputSection = document.getElementById('focusBlurInput');
+const messageSection = document.getElementById('focusMessage');
+
+inputSection.addEventListener('focus', () => {
+  // changes the message while being focused
+  messageSection.textContent = 'Input field is focused! Start typing...';
+  messageSection.style.color = '#00ee2b';
+});
+
+inputSection.addEventListener('blur', () => {
+  // changes the message when no focus
+  messageSection.textContent = 'Input field lost focus. Click to re-focus!';
+  messageSection.style.color = '#780009';
+});

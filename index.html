@@ -8,23 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--First Part-->
     <div id="container">
         <h3>Mouse Events</h3>
         <div id="mouseHover" onmouseenter="this.style.backgroundColor = 'salmon';" onmouseleave="this.style.backgroundColor = 'transparent';">
-            Hover over me (Inline)
+            Hover over the Inline
         </div>
 
         <div id="hoverDiv">
-            Hover over me (Listener)
+            Hover for the Listener
         </div>
     </div>
-    
+
+    <!--Second Part-->
     <section id="container">
         <h3>Keyboard Events</h3>
         <input type="text" id="keyInput" placeholder="Type something here..." />
         <div class="output" id="keyOutput">Press a key...</div>
     </section>
 
+    <!--Third Part-->
     <section id="container">
         <h3>Form Events</h3>
         <form id="formEvents">
@@ -34,5 +37,14 @@
         </form>
         <div class="message" id="message"></div>
     </section>
+
+    <!--Fourth Part-->
+    <section id="container">
+        <h3>Blur Events</h3>
+        <input type="text" id="focusBlurInput" placeholder="Click to focus..." />
+        <div class="message" id="focusMessage">Start typing to see updates...</div>
+    </section>
+
+
 </body>
 </html>
