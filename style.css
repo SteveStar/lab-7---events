@@ -31,3 +31,14 @@
     width: 300px;
 }
 
+button {
+    padding: 5px;
+    margin: 1px;
+    background-color: #9f17d4;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #9a3ebf;
+}

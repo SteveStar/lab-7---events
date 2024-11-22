@@ -48,3 +48,15 @@ inputSection.addEventListener('blur', () => {
   messageSection.textContent = 'Input field lost focus. Click to re-focus!';
   messageSection.style.color = '#780009';
 });
+
+//fifth part
+const container = document.getElementById('buttonContainer');
+const messageCon = document.getElementById('messageLabel');
+
+    container.addEventListener('click', (event) => {
+
+      if (event.target.tagName === 'BUTTON') {
+        const buttonText = event.target.textContent;
+        messageCon.textContent = `You clicked: ${buttonText}`;
+      }
+    });
